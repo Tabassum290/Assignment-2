@@ -11,7 +11,7 @@
       background: black;
       margin-bottom: 20px;
   }
-  *{
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -19,7 +19,7 @@
 
 /* Fitness Section */
 .fitness{
-  width: 100%;
+  width: 1540px;
   height: 685px;
   margin: 0 auto;
   border: 1px solid black;
@@ -62,8 +62,7 @@ text-align: right;
 }
 .img{
   width: 100%;
-  margin-right :214px ;
-  margin-left: 1080px;
+  margin-left: 1050px;
 }
 
 .span{
@@ -109,13 +108,13 @@ margin-top: 12px;
 }
 .box-1{
   margin-top: -450px;
-  margin-left:1300px;
+  margin-left:1275px;
 }
 .box-2{
   width: 206px;
   height: 96px;
  margin-top: -175px;
-  margin-left: 1000px;
+  margin-left: 950px;
 }
 .box-2 h3{
 font-size: 24px;
@@ -167,7 +166,7 @@ margin-top: -450px;
   margin-left: 80px;
   margin-bottom: 28px;
 }
-.btn-1{
+.btn-1,.btn-3{
   width: 224px;
   height: 54px;
   background-color: rgb(230, 83, 60);
@@ -354,6 +353,7 @@ letter-spacing: 0.3px;
   margin: 0 auto;
   margin-top: 88px;
   border: 1px solid black;
+  display: flex;
 }
 .calculator-chart{
   width: 40%;
@@ -367,27 +367,154 @@ letter-spacing: 0.3px;
   margin-left: 187px;
   margin-top: 52px;
 }
-.head{
-  color: white;
-  font-size: 16px;
-  font-weight: 500;
-
-}
-.font{
-  color: rgba(255, 255, 255, 0.5);
-  font-weight: 400;
-}
-.chart{
-  border-collapse: collapse;
+table{
   width: 310px;
   height: 216px;
   margin-left: 187px;
   margin-top: 52px;
 }
-.chart tbody tr {
-  border: 1px solid rgba(255, 255, 255, 0.1);
- border-collapse: collapse;
+td{
+  vertical-align:middle;
 }
+table , tr , td ,th{
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-collapse: collapse;
+   text-align:center;
+}
+.head{
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+}
+.font{
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 400;
+  font-size: 14px;
+  text-align: left;
+}
+/* Calculate BMI  */
+.calculate-bmi{
+  width: 60%;
+  height: 386px;
+}
+.calculate-bmi h3{
+  color: white;
+  font-size: 28px;
+  font-weight: 900;
+  line-height: 120%;
+  text-align: left;
+  margin-left: 187px;
+  margin-top: 52px;
+}
+.calculate-bmi p{
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+  text-align: left;
+  margin-left: 188px;
+  margin-top: 14px;
+  letter-spacing: 0.3px;
+  line-height: 24px;
+}
+.bmi-inputs{
+  position: absolute;
+  width: 100%;
+  border-radius: 8px;
+  margin-left: 175px;
+ margin-top: 34px;
+}
+.first-row , .second-row {
+      width: 580px;
+      height: 48px;
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      margin-bottom: 12px;
+}
+.first-row input ,.second-row input , .second-row select{
+  width: 283px;
+  height: 48px;
+  border-radius: 8px;
+  padding: 12px 40px 12px 20px;
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.6);
+  border: none;
+}
+
+.third-row select{
+    width: 577px;
+    height: 48px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.6);
+    padding: 12px 40px 12px 20px;
+    border: none;
+}
+
+.btn-3{
+  margin-top: 34px;
+  flex-direction: column;
+  margin-left: 0px;
+}
+/* Team-section Styling */
+.team-section{
+  width: 1060px;
+  height: 782px;
+  margin: 0 auto;
+  
+  margin-top: 88px;
+}
+.team-heading h3{
+  font-size: 48px;
+  font-weight: 900;
+  align-items: center;
+  text-align: center;
+  color: white;
+  line-height: 120%;
+
+}
+.team-heading p{
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  align-items: center;
+  margin-top: 14px;
+  margin-bottom: 58px;
+}
+.team-img-container{
+  width: 100%;
+  height: 604px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+}
+.trainer-1 img , .trainer-2 img , .trainer-3 img , .trainer-4 img , .trainer-5 img , .trainer-6 img{
+  width: 327px;
+  height: 272px;
+  border-radius: 18px;
+}
+.first-trainer-list , .second-trainer-list{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  margin-bottom: -25px;
+}
+
+.name , .trainer{
+  position: relative;
+}
+.name , .trainer {
+  top: -18%;
+  left: 8%;
+  color: white;
+}
+.trainer{
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+}
+
 
 /* Responsive For Mobile Device */
 @media screen and (max-width:576px){
