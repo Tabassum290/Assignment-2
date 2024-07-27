@@ -682,5 +682,43 @@ margin-bottom: 20px;
   margin-top: 50px;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 50px;
+}
+.para{
+  margin-bottom: 20px;
+}
+/* Run-extra Section */
+.run-extra{
+  width: 353px;
+  height: 531px;
+  margin-top: 900px;
+  flex-direction: column;
+}
+.left-run-extra h3{
+ font-size: 32px;
+ margin-left: 30px;
+ margin-right: -70px;
+ text-align: left;
+}
+.left-run-extra p{
+  margin-left: 30px;
+  margin-right: -140px;
+  text-align: left;
+}
+.break{
+  display: none;
+}
+.run{
+  width: 287px;
+align-items: center;
+margin-top: 20px;
+margin-left: 30px;
+}
+.right-run-extra img{
+  width: 287px;
+  height: 170px;
+  margin-top: 30px;
+  margin-left: 30px;
+  
 }
 }
