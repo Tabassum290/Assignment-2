@@ -577,7 +577,7 @@ margin-bottom: 20px;
 }
 /* Responsive For Mobile Device */
 @media screen and (max-width:576px){
-  .fitness , .calculator-section {
+  .fitness , .calculator-section, .team-section {
     width:100%;
     flex-direction: column;
   }
@@ -668,7 +668,7 @@ margin-bottom: 20px;
   display: block;
 }
 /* Habits Section */
-.habits-description h3 {
+.habits-description h3  {
   margin-top: 400px;
   font-size: 32px;
   align-items: center;
@@ -759,5 +759,55 @@ width: 170px;
 }
 .third-row select{
   width: 353px ;
+}
+/* Team Section */
+.team-heading h3{
+  margin-top: -30px;
+  font-size: 32px;
+  align-items: center;
+}
+.team-img-container{
+  width: 353px;
+  height: 1888px;
+  padding: 20px;
+}
+.first-trainer-list img , .second-trainer-list img{
+  width: 313px;
+  height: 272px;
+}
+.first-trainer-list , .second-trainer-list{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: none;
+}
+/* Footer Section */
+.footer-section{
+  width: 393px;
+  height: 800px;
+  margin-top: 1350px;
+  flex-direction: column;
+}
+.footer-main{
+  width: 100%;
+  flex-direction: column;
+}
+.logo-2{
+  font-size: 70px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.logo-2 p{
+  margin-right: 20px;
+}
+.get-started-1 , .get-started-2{
+  margin-left:-200px;
+  margin-top: 30px;
+  margin-bottom: -10px;
+}
+.get-started-1 h3 , .get-started-2 h3{
+  margin-bottom: 10px;
+}
+#hr{
+  margin-top: 20px;
 }
 }
