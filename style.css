@@ -582,7 +582,7 @@ margin-bottom: 20px;
     flex-direction: column;
   }
   .ham-burger{
-   margin-right: 10px;
+   margin-right: 15px;
    color: white;
    display: block;
   }
@@ -591,13 +591,13 @@ margin-bottom: 20px;
   }
   .description h3{
     font-size: 36px;
-    margin-left: 10px;
+    margin-left: 20px;
   }
   .span{
     font-size:60px
   }
   .description p{
-     margin-left: 10px;
+     margin-left: 20px;
      font-size: 16px;
      margin-right: 445px;
      line-height: 24px;
@@ -606,7 +606,7 @@ margin-bottom: 20px;
 
   }
   .btn-1 , .btn-2{
-    margin-left: 5px;
+    margin-left: 15px;
     width: 170px;
     font-size: 18px;
     font-weight: 600;
@@ -625,7 +625,7 @@ margin-bottom: 20px;
   width: 353px;
   height: 550px;
   margin-top: 390px;
-  margin-left: -1050px;
+  margin-left: -1025px;
   position: absolute;
 }
 .box-1{
