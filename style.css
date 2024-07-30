@@ -61,7 +61,7 @@ line-height: 120%;
 text-align: right;
 }
 .img{
-  width: 100%;
+  /* width: 100%; */
   margin-left: 1050px;
 }
 
@@ -74,7 +74,7 @@ text-align: right;
 .color{
   position: static;
 box-sizing: border-box;
-width: 100%;
+/* width: 100%; */
 height: 100%;
 border-radius: 46px;
 background: rgb(230, 83, 60);
@@ -103,7 +103,6 @@ color: white;
   background-color:  rgb(230, 83, 60) ;
 }
 .circle-play i{
-
 position: relative;
 margin-left: 16px;
 margin-top: 12px;
@@ -198,7 +197,7 @@ margin-top: -450px;
 }
 /* Habit section Styling */
 .habits{
-  width: 100%;
+  /* width: 100%; */
   background-color: black;
 }
 .habits-description h3{
@@ -487,7 +486,7 @@ table , tr , td ,th{
   margin-bottom: 58px;
 }
 .team-img-container{
-  width: 100%;
+  /* width: 100%; */
   height: 604px;
   border-radius: 18px;
   background: rgba(255, 255, 255, 0.1);
@@ -577,12 +576,19 @@ margin-bottom: 20px;
 }
 /* Responsive For Mobile Device */
 @media screen and (max-width:576px){
+  html , .inter-normal{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
   .fitness , .calculator-section, .team-section {
     width:100%;
     flex-direction: column;
+    margin-right: 20px;
   }
   .ham-burger{
-   margin-right: 15px;
+   margin-right: 10px;
    color: white;
    display: block;
   }
@@ -603,11 +609,10 @@ margin-bottom: 20px;
      line-height: 24px;
      letter-spacing: 0.5px;
      text-align: left;
-
-  }
+}
   .btn-1 , .btn-2{
     margin-left: 15px;
-    width: 170px;
+    width: 160px;
     font-size: 18px;
     font-weight: 600;
     padding: 0;
@@ -732,7 +737,7 @@ margin-left: 30px;
   margin-right: 1100px;
 }
 .calculator-main{
-  width: 394px;
+  width: 550px;
   height: 772px;
   flex-direction: column;
 }
@@ -745,7 +750,7 @@ margin-left: 30px;
 }
 .calculate-bmi p{
   margin-left: 20px;
-  margin-right: -60px;
+  margin-right: 20px;
 }
 table{
   margin-left: 20px;
@@ -755,10 +760,10 @@ table{
   margin-left: 20px;
 }
 .first-row input , .second-row input , .second-row select{
-width: 170px;
+width: 160px;
 }
 .third-row select{
-  width: 353px ;
+  width: 330px ;
 }
 /* Team Section */
 .team-heading h3{
@@ -767,14 +772,16 @@ width: 170px;
   align-items: center;
 }
 .team-img-container{
-  width: 353px;
+  width: 360px;
   height: 1888px;
   align-items: center;
-  margin-left: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 .first-trainer-list img , .second-trainer-list img{
   width: 313px;
   height: 272px;
+  align-items: center;
 }
 .first-trainer-list , .second-trainer-list{
   display: grid;
@@ -809,6 +816,14 @@ width: 170px;
   margin-bottom: 10px;
 }
 #hr{
+  width: 300px;
   margin-top: 20px;
+  margin-right: 60px;
+
+}
+.copy{
+  align-items: center;
+  text-align: center;
+  margin-right: 20px;
 }
 }
