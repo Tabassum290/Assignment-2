@@ -10,21 +10,22 @@
       "slnt" 0;
       background: black;
       margin-bottom: 20px;
+      /* border: 2px dashed green; */
   }
-*{
+*{ 
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* border: 1px solid red; */
 }
 
 /* Fitness Section */
 .fitness{
-  width: 1540px;
+  width: 1500px;
   height: 685px;
   margin: 0 auto;
   border: 1px solid black;
-  background:  linear-gradient(180.00deg, rgba(0,0,0,1),rgba(0,0,0,0.7),rgba(0,0,0,0.7),rgba(0,0,0,1) 100%);
-  /* background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119,0)100%); */
+  background:  linear-gradient(180.00deg, rgba(0,0,0,1),rgba(0,0,0,0.9),rgba(0,0,0,0.9),rgba(0,0,0,1) 100%);
   stroke: (255, 255, 255, 0.1);
 }
 .navbar{
@@ -61,7 +62,7 @@ line-height: 120%;
 text-align: right;
 }
 .img{
-  /* width: 100%; */
+  width: 100%;
   margin-left: 1050px;
 }
 
@@ -574,6 +575,7 @@ margin-bottom: 20px;
   line-height: 24px;
   margin-top: 36px;
 }
+
 /* Responsive For Mobile Device */
 @media screen and (max-width:576px){
   html , .inter-normal{
@@ -585,13 +587,15 @@ margin-bottom: 20px;
   .fitness , .calculator-section, .team-section {
     width:100%;
     flex-direction: column;
-    margin-right: 20px;
   }
-  .ham-burger{
-   margin-right: 10px;
-   color: white;
-   display: block;
-  }
+.ham-burger{
+  display: block;
+  margin-right: 10px;
+  color: white;
+}
+.nav-options{
+  display: none;
+}
   .description{
     margin-top: 150px;
   }
@@ -605,14 +609,14 @@ margin-bottom: 20px;
   .description p{
      margin-left: 20px;
      font-size: 16px;
-     margin-right: 445px;
+     margin-right: 400px;
      line-height: 24px;
      letter-spacing: 0.5px;
      text-align: left;
 }
   .btn-1 , .btn-2{
     margin-left: 15px;
-    width: 160px;
+    width: 170px;
     font-size: 18px;
     font-weight: 600;
     padding: 0;
@@ -620,18 +624,17 @@ margin-bottom: 20px;
   .hide{
     display: none;
   }
-  .nav-options{
-    display: none;
-  }
+
   .logo h3{
     font-size: 36px;
   }
 .img-contain{
   width: 353px;
   height: 550px;
-  margin-top: 390px;
-  margin-left: -1025px;
   position: absolute;
+  margin-top: 420px;
+  margin-left: -1030px;
+  align-items: center;
 }
 .box-1{
   width: 145px;
@@ -674,12 +677,13 @@ margin-bottom: 20px;
 }
 /* Habits Section */
 .habits-description h3  {
-  margin-top: 400px;
+  margin-top: 440px;
   font-size: 32px;
   align-items: center;
 }
 .habits-description p{
-  margin: 14px 0px;
+  margin-left: 20px;
+  margin-right: 20px;
  align-items: center;
  text-align: center;
 }
@@ -741,6 +745,7 @@ margin-left: 30px;
   height: 772px;
   flex-direction: column;
 }
+
 .calculator-chart h3 , .calculate-bmi h3{
   font-size: 16px;
   margin-left: 20px;
@@ -757,13 +762,18 @@ table{
   margin-top: 30px;
 }
 .bmi-inputs{
+  width: 353px;
+  margin-right: 20px;
   margin-left: 20px;
 }
+.first-row , .second-row {
+  width: 350px;
+}
 .first-row input , .second-row input , .second-row select{
-width: 160px;
+width: 170px;
 }
 .third-row select{
-  width: 330px ;
+  width: 348px ;
 }
 /* Team Section */
 .team-heading h3{
@@ -825,5 +835,162 @@ width: 160px;
   align-items: center;
   text-align: center;
   margin-right: 20px;
+}
+}
+
+/* Responsive for Tab */
+@media screen and (max-width:992px) and (min-width:576px){
+  html , .inter-normal{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  .fitness{
+    width: 100%;
+    flex-direction: column;
+    height: 1440px;
+  }
+  .navbar{
+    width: 100%;
+    margin-left: 20px;
+}
+.nav-options{
+  margin-right: 80px;
+}
+.description{
+  margin-left: 40px;
+  margin-top: 160px;
+}
+.description h3{
+  font-size: 78px;
+}
+.img-contain{
+  width: 353px;
+  height: 550px;
+  position: absolute;
+  margin-top: 550px;
+  margin-left: -850px;
+}
+.img img{
+  width: 350px;
+}
+/* Habits Section */
+.habits{
+  margin-top: -250px;
+}
+.habits-img-container{
+  width: 100%;
+ display: grid;
+ grid-template-columns: repeat(2,1fr);
+ margin-left: 100px;
+ gap: 15px;
+ align-items: center;
+}
+.img-2 , .img-4{
+  margin-left: -100px;
+}
+.img-1 .para , .img-3 .para{
+  margin-left: -200px;
+}
+.img-2 .para , .img-4 .para{
+  margin-left: -200px;
+  margin-right: 100px;
+}
+/* Run-Extra Styling */
+.run-extra{
+  width: 685px;
+  height: 400px;
+  background-color: rgb(34, 34, 34);
+  margin-top: 350px;
+}
+.left-run-extra{
+  margin-right: 40px;
+}
+.left-run-extra h3{
+  font-size: 36px;
+}
+.right-run-extra img{
+  position: absolute;
+  width: 255px;
+  height: 320px;
+  border-radius: 18px;
+  margin-left: 40px;
+}
+.break{
+  display: none;
+}
+/* Calculator Styling */
+.calculator-head{
+  width: 100%;
+  margin-left: -300px;
+}
+.calculator-head p{
+  margin-right: -180px;
+}
+.calculator-main{
+  width: 745px;
+  height: 820px;
+  flex-direction: column;
+}
+.calculator-chart h3 , .calculate-bmi h3{
+  font-size: 30px;
+  margin-left: 20px;
+  margin-right: -50px;
+  margin-top: 20px; 
+}
+.calculate-bmi {
+  width: 100%;
+  margin-top: 60px;
+}
+.calculate-bmi p{
+  margin-left: 20px;
+}
+.calculator-chart table {
+  margin-left: 20px;
+  margin-top: 40px;
+}
+.bmi-inputs{
+  width: 685px;
+  margin-left: 20px;
+}
+/* Team Styling */
+.team-section{
+  width: 100%;
+}
+.team-img-container{
+  width: 677px;
+  height: 605px;
+  margin: 0 auto;
+  margin-top: -30px;
+}
+.team-img-container img{
+  width: 200px;
+  height: 270px;
+}
+/* Footer Styling */
+.footer-section{
+  width: 100%;
+  height: 770px;
+}
+.footer-main{
+  flex-direction: column;
+  width: 100%;
+}
+.logo-2{
+  margin-left: 40px;
+  margin-top: 60px;
+}
+.logo-2 p{
+  margin-right: 240px;
+}
+.get-started-1{
+  position: absolute;
+margin-left: -520px;
+margin-top: 300px;
+}
+.get-started-2{
+  margin-left: -20px;
+  margin-top: 75px;
 }
 }
