@@ -464,7 +464,6 @@ table , tr , td ,th{
   width: 1060px;
   height: 782px;
   margin: 0 auto;
-  
   margin-top: 88px;
 }
 .team-heading h3{
@@ -497,6 +496,7 @@ table , tr , td ,th{
   width: 327px;
   height: 272px;
   border-radius: 18px;
+  filter: brightness(80%);
 }
 .first-trainer-list , .second-trainer-list{
   display: grid;
